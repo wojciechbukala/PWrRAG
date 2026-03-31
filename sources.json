@@ -1,0 +1,146 @@
+{
+    "sources": [
+        {
+            "id": "PWR-01",
+            "department": "PWr",
+            "url": "pwr.edu.pl",
+            "entry_points": []
+        },
+        {
+            "id": "W1-01",
+            "department": "PWr-W1",
+            "url": "https://wa.pwr.edu.pl/"
+        },
+        {
+            "id": "W2-01",
+            "department": "PWr-W2",
+            "url": "https://wbliw.pwr.edu.pl/"
+        },
+        {
+            "id": "W3-01",
+            "department": "PWr-W3",
+            "url": "https://wch.pwr.edu.pl/"
+        },
+        {
+            "id": "W4-01",
+            "department": "PWr-W4",
+            "url": "https://wit.pwr.edu.pl/"
+        },
+        {
+            "id": "W5-01",
+            "department": "PWr-W5",
+            "url": "https://weny.pwr.edu.pl/"
+        },
+        {
+            "id": "W6-01",
+            "department": "PWr-W6",
+            "url": "https://wggg.pwr.edu.pl/"
+        },
+        {
+            "id": "W7-01",
+            "department": "PWr-W7",
+            "url": "https://wis.pwr.edu.pl/"
+        },
+        {
+            "id": "W8-01",
+            "department": "PWr-W8",
+            "url": "https://wz.pwr.edu.pl/"
+        },
+        {
+            "id": "W9-01",
+            "department": "PWr-W9",
+            "url": "https://wme.pwr.edu.pl/"
+        },
+        {
+            "id": "W10-01",
+            "department": "PWr-W10",
+            "url": "https://wm.pwr.edu.pl/"
+        },
+        {
+            "id": "W11-01",
+            "department": "PWr-W11",
+            "url": "https://wppt.pwr.edu.pl/"
+        },
+        {
+            "id": "W12-01",
+            "department": "PWr-W12",
+            "url": "https://wefim.pwr.edu.pl/"
+        },
+        {
+            "id": "W13-01",
+            "department": "PWr-W13",
+            "url": "https://wmat.pwr.edu.pl/"
+        },
+        {
+            "id": "W14-01",
+            "department": "PWr-W14",
+            "url": "https://wmed.pwr.edu.pl/"
+        },
+        {
+            "id": "BIB-01",
+            "department": "Bibliteka PWr",
+            "url": "https://biblioteka.pwr.edu.pl/"
+        },
+        {
+            "id": "CKU-01",
+            "department": "Dział Kształcenia Sekcja Studiów Podyplomowych i Mikropoświadczeń",
+            "url": "https://cku.pwr.edu.pl/"
+        },
+        {
+            "id": "BIZNES-01",
+            "department": "Centrum Innowacji i Biznesu Politechniki Wrocławskiej",
+            "url": "https://biznes.pwr.edu.pl/"
+        },
+        {
+            "id": "NAUKA-01",
+            "department": "Dzial Nauki",
+            "url": "https://nauka.pwr.edu.pl/"
+        },
+        {
+            "id": "PROJEKTY-01",
+            "department": "Dzial Projektow",
+            "url": "https://dp.pwr.edu.pl/"
+        },
+        {
+            "id": "CRM-01",
+            "department": "Centrum Relacji Krajowych i Miedzynaraodowych",
+            "url": "https://crm.pwr.edu.pl/"
+        },
+        {
+            "id": "KARIERA-01",
+            "department": "Biuro Karier",
+            "url": "https://biurokarier.pwr.edu.pl/"
+        },
+        {
+            "id": "CDD-01",
+            "department": "Centrum Doskonalosci Dydaktycznej",
+            "url": "https://cdd.pwr.edu.pl/"
+        },
+        {
+            "id": "RJK-01",
+            "department": "Rada Jakosci Ksztalcenia",
+            "url": "https://rjk.pwr.edu.pl/"
+        },
+        {
+            "id": "KONF-01",
+            "department": "Konferencje PWr",
+            "url": "https://konferencje.pwr.edu.pl/"
+        },
+        {
+            "id": "SS-01",
+            "department": "Samorzad Studencki",
+            "url": "https://samorzad.pwr.edu.pl/"
+        },
+        {
+            "id": "REKRUTACJA-01",
+            "department": "Rekrutacja PWr",
+            "url": "https://rekrutacja.pwr.edu.pl/"
+        },
+        {
+            "id": "SZD-01",
+            "department": "Szkola Doktroska",
+            "url": "https://szd.pwr.edu.pl/"
+        }
+    ]
+}
+
