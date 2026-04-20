@@ -3,144 +3,171 @@
         {
             "id": "PWR-01",
             "department": "PWr",
-            "url": "pwr.edu.pl",
+            "url": "https://pwr.edu.pl/",
+            "keywords": "KEYWORDS_PWR",
             "entry_points": []
         },
         {
             "id": "W1-01",
             "department": "PWr-W1",
-            "url": "https://wa.pwr.edu.pl/"
+            "url": "https://wa.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W2-01",
             "department": "PWr-W2",
-            "url": "https://wbliw.pwr.edu.pl/"
+            "url": "https://wbliw.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W3-01",
             "department": "PWr-W3",
-            "url": "https://wch.pwr.edu.pl/"
+            "url": "https://wch.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W4-01",
             "department": "PWr-W4",
-            "url": "https://wit.pwr.edu.pl/"
+            "url": "https://wit.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W5-01",
             "department": "PWr-W5",
-            "url": "https://weny.pwr.edu.pl/"
+            "url": "https://weny.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W6-01",
             "department": "PWr-W6",
-            "url": "https://wggg.pwr.edu.pl/"
+            "url": "https://wggg.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W7-01",
             "department": "PWr-W7",
-            "url": "https://wis.pwr.edu.pl/"
+            "url": "https://wis.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W8-01",
             "department": "PWr-W8",
-            "url": "https://wz.pwr.edu.pl/"
+            "url": "https://wz.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W9-01",
             "department": "PWr-W9",
-            "url": "https://wme.pwr.edu.pl/"
+            "url": "https://wme.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W10-01",
             "department": "PWr-W10",
-            "url": "https://wm.pwr.edu.pl/"
+            "url": "https://wm.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W11-01",
             "department": "PWr-W11",
-            "url": "https://wppt.pwr.edu.pl/"
+            "url": "https://wppt.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W12-01",
             "department": "PWr-W12",
-            "url": "https://wefim.pwr.edu.pl/"
+            "url": "https://wefim.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W13-01",
             "department": "PWr-W13",
-            "url": "https://wmat.pwr.edu.pl/"
+            "url": "https://wmat.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "W14-01",
             "department": "PWr-W14",
-            "url": "https://wmed.pwr.edu.pl/"
+            "url": "https://wmed.pwr.edu.pl/",
+            "keywords": "KEYWORDS_DEP"
         },
         {
             "id": "BIB-01",
             "department": "Bibliteka PWr",
-            "url": "https://biblioteka.pwr.edu.pl/"
+            "url": "https://biblioteka.pwr.edu.pl/",
+            "keywords": "KEYWORDS_BIB"
         },
         {
             "id": "CKU-01",
             "department": "Dział Kształcenia Sekcja Studiów Podyplomowych i Mikropoświadczeń",
-            "url": "https://cku.pwr.edu.pl/"
+            "url": "https://cku.pwr.edu.pl/",
+            "keywords": "KEYWORDS_CKU"
         },
         {
             "id": "BIZNES-01",
             "department": "Centrum Innowacji i Biznesu Politechniki Wrocławskiej",
-            "url": "https://biznes.pwr.edu.pl/"
+            "url": "https://biznes.pwr.edu.pl/",
+            "keywords": "KEYWORDS_BIZ"
         },
         {
             "id": "NAUKA-01",
             "department": "Dzial Nauki",
-            "url": "https://nauka.pwr.edu.pl/"
+            "url": "https://nauka.pwr.edu.pl/",
+            "keywords": "KEYWORDS_NAU"
         },
         {
             "id": "PROJEKTY-01",
             "department": "Dzial Projektow",
-            "url": "https://dp.pwr.edu.pl/"
+            "url": "https://dp.pwr.edu.pl/",
+            "keywords": "KEYWORDS_PROJ"
         },
         {
             "id": "CRM-01",
             "department": "Centrum Relacji Krajowych i Miedzynaraodowych",
-            "url": "https://crm.pwr.edu.pl/"
+            "url": "https://crm.pwr.edu.pl/",
+            "keywords": "KEYWORDS_CRM"
         },
         {
             "id": "KARIERA-01",
             "department": "Biuro Karier",
-            "url": "https://biurokarier.pwr.edu.pl/"
+            "url": "https://biurokarier.pwr.edu.pl/",
+            "keywords": "KEYWORDS_BK"
         },
         {
             "id": "CDD-01",
             "department": "Centrum Doskonalosci Dydaktycznej",
-            "url": "https://cdd.pwr.edu.pl/"
+            "url": "https://cdd.pwr.edu.pl/",
+            "keywords": "KEYWORDS_CDD"
         },
         {
             "id": "RJK-01",
             "department": "Rada Jakosci Ksztalcenia",
-            "url": "https://rjk.pwr.edu.pl/"
+            "url": "https://rjk.pwr.edu.pl/",
+            "keywords": "KEYWORDS_RJK"
         },
         {
             "id": "KONF-01",
             "department": "Konferencje PWr",
-            "url": "https://konferencje.pwr.edu.pl/"
+            "url": "https://konferencje.pwr.edu.pl/",
+            "keywords": "KEYWORDS_KONF"
         },
         {
             "id": "SS-01",
             "department": "Samorzad Studencki",
-            "url": "https://samorzad.pwr.edu.pl/"
+            "url": "https://samorzad.pwr.edu.pl/",
+            "keywords": "KEYWORDS_SAM"
         },
         {
             "id": "REKRUTACJA-01",
             "department": "Rekrutacja PWr",
-            "url": "https://rekrutacja.pwr.edu.pl/"
+            "url": "https://rekrutacja.pwr.edu.pl/",
+            "keywords": "KEYWORDS_REK"
         },
         {
             "id": "SZD-01",
-            "department": "Szkola Doktroska",
-            "url": "https://szd.pwr.edu.pl/"
+            "department": "Szkola Doktorska",
+            "url": "https://szd.pwr.edu.pl/",
+            "keywords": "KEYWORDS_SZD"
         }
     ]
 }
-
