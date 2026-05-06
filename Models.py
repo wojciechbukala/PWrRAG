@@ -1,8 +1,8 @@
-from langchain_huggingface import HuggingFaceEmbeddings, HuggingFacePipeline
+from langchain_huggingface import HuggingFaceEmbeddings, HuggingFaceEndpoint
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from langchain_chroma import Chroma
-import torch
 import os
+import torch
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -76,11 +76,20 @@ def verify_vectorstore():
 LLM_MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.3"
 
 def get_llm():
+    return HuggingFaceEndpoint(
+        repo_id=LLM_MODEL_NAME,
+        task="text-generation",
+        max_new_tokens=512,
+        temperature=0.1,
+        huggingfacehub_api_token=hf_token,
+    )
+
+
+def get_llm_local():
     tokenizer = AutoTokenizer.from_pretrained(LLM_MODEL_NAME)
     model = AutoModelForCausalLM.from_pretrained(
         LLM_MODEL_NAME,
-        torch_dtype=torch.float16,
-        device_map="auto"
+        dtype=torch.float32
     )
 
     pipe = pipeline(
@@ -89,8 +98,7 @@ def get_llm():
         tokenizer=tokenizer,
         max_new_tokens=512,
         temperature=0.1,
-        do_sample=True
+        huggingfacehub_api_token=hf_token
     )
 
-    return HuggingFacePipeline(pipeline=pipe)
 

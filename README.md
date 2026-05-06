@@ -36,3 +36,30 @@ Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttle
 [OpenAI API docs](https://developers.openai.com/api/docs)
 
 
+## Sprawdzanie bazy wektorowej chromaDB
+
+Aby sprawdzić lokalną bazę danych skopiuj w terminalu ten fragment:
+```
+cd ~/PWrRAG/PWrRAG && source venv/bin/activate && python - <<'EOF'
+import chromadb
+
+client = chromadb.PersistentClient(path="./chroma_db")
+
+# Lista kolekcji
+for col in client.list_collections():
+    print(f"Kolekcja: {col.name}, liczba dokumentów: {col.count()}")
+
+# Szczegóły kolekcji PWrRAG
+col = client.get_collection("PWrRAG")
+print(f"\nLiczba chunków: {col.count()}")
+
+# Przykładowe 3 chunki
+result = col.peek(limit=3)
+for i, (doc, meta) in enumerate(zip(result['documents'], result['metadatas'])):
+    print(f"\n--- Chunk {i+1} ---")
+    print(f"Metadata: {meta}")
+    print(f"Tekst: {doc[:300]}...")
+EOF
+
+```
+
