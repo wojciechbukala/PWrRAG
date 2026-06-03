@@ -3,10 +3,10 @@ beautifulsoup4==4.14.3
 pypdf
 python-docx
 python-dotenv==1.2.2
-torch
-transformers
 chromadb==1.5.5
-langchain-core==1.2.20
-langchain-community==0.4.1
-langchain-text-splitters==1.1.1
-langchain-huggingface==1.2.1
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-chroma
+langchain-ollama
+streamlit

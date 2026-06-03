@@ -1,14 +1,6 @@
-import os
-from dotenv import load_dotenv
+from langchain_core.messages import SystemMessage, HumanMessage
 
-load_dotenv()
-
-from langchain_core.prompts import PromptTemplate
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnablePassthrough
-from openai import OpenAI
-
-from Models import get_vectorstore
+from Models import get_vectorstore, get_llm
 
 
 ### QUERY TRANSLATION ###
@@ -17,13 +9,11 @@ from Models import get_vectorstore
 
 ### RETRIEVAL ##
 
-def retrieval():
+def retrieval(k: int = 4):
     vectorstore = get_vectorstore()
     retriever = vectorstore.as_retriever(
         search_type="similarity",
-        search_kwargs={
-            "k": 20,
-        },
+        search_kwargs={"k": k},
     )
     return retriever
 
@@ -32,42 +22,28 @@ def retrieval():
 def format_retrieved_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
-def generation(question: str) -> str:
-    retriever = retrieval()
+SYSTEM_PROMPT = """Jesteś asystentem na Politechnice Wrocławskiej.
+Odpowiedz na zadane pytanie prioretyzując podany kontekst.
+Twoim domyślnym językiem jest polski w tonie oficjalnej, trzymaj się tej zasady, chyba że jasno zostaniesz poproszony o zmianę.
+Jeśli nie jesteś pewny odpowiedzi, odpowiedz: 'Nie znam odpowiedzi na to pytanie.'"""
 
+def generation(question: str, model: str = None, k: int = 4) -> tuple[str, list]:
+    retriever = retrieval(k=k)
     retrieved = retriever.invoke(question)
-
     context = format_retrieved_docs(retrieved)
 
-    client = OpenAI(
-        base_url="https://router.huggingface.co/v1",
-        api_key=os.environ["HUGGINGFACE_API_KEY"],
-    )
-
-    response = client.responses.create(
-        model="CYFRAGOVPL/PLLuM-12B-chat:featherless-ai",
-        instructions="""Jesteś asystentem na Politechnice Wrocławskiej.
-Odpowiedz na zadane pytanie prioretyzując podany kontekst.
-Twoim domyślnym językiem jest polski w tonie ofcjalnej, trzymaj się tej zasady, chyba że jasno zostaniesz poproszony o zmianę.
-Jeśli nie jesteś pewny odpowiedzi, odpowiedz: 'Nie znam odpowiedzi na to pytanie.'""",
-        input=[
-            {
-                "role": "developer",
-                "content": f"""Kontekst: {context}"""
-            },
-            {
-                "role": "user",
-                "content": f"""Pytanie: {question}"""
-            }
-        ],
-        max_output_tokens=30000
-    )
-    return response.output_text
+    llm = get_llm(model=model) if model else get_llm()
+    messages = [
+        SystemMessage(content=SYSTEM_PROMPT),
+        HumanMessage(content=f"Kontekst:\n{context}\n\nPytanie: {question}"),
+    ]
+    response = llm.invoke(messages)
+    return response.content, retrieved
 
 
 ### Tests
 if __name__ == '__main__':
-    question = "Jakie są zasady rekrutacji na Inforamtyczne Systemy Automatyki - studia II stopnia."
+    question = "Jakie są prawa studenta na politechnice wrocławskiej"
 
     # Test retrieval
     retriever = retrieval()
